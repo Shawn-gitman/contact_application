@@ -22,8 +22,8 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     //******************************************************
-    //이름: 강태규
-    //학번: 201614729
+    //이름: TaeKyu, Kang
+    //학번: -
     //설명: MainActivity.java - 메인 뷰를 볼 수 있는 화면
     //******************************************************
 
