@@ -14,8 +14,8 @@ import android.widget.RadioGroup;
 
 public class create_activity extends AppCompatActivity {
     //******************************************************
-    //이름: 강태규
-    //학번: 201614729
+    //이름: TaeKyu, Kang
+    //학번: -
     //설명: MainActivity.java - 개인정보 생성
     //******************************************************
 
