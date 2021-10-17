@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/UnView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".create_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/UnspecifiedView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/unspecified" />
+
+            <ImageView
+                android:id="@+id/FemaleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/female" />
+
+            <ImageView
+                android:id="@+id/MaleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/male" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="221dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="114dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_Name"
+                    android:layout_width="103dp"
+                    android:layout_height="49dp"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="8dp"
+                    android:text="Name"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView_Gender"
+                    android:layout_width="103dp"
+                    android:layout_height="49dp"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="8dp"
+                    android:text="Gender"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView_Phone"
+                    android:layout_width="103dp"
+                    android:layout_height="49dp"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="8dp"
+                    android:text="Phone"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="295dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/textView_Name_Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:hint="Name"
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
+                <RadioGroup
+                    android:id="@+id/RadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/Male_Radio"
+                        android:layout_width="81dp"
+                        android:layout_height="51dp"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/Female_Radio"
+                        android:layout_width="88dp"
+                        android:layout_height="51dp"
+                        android:text="Female" />
+
+                    <RadioButton
+                        android:id="@+id/Unspecified_Radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="51dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Unspecified" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/textView_Phone_Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:hint="010-0000-0000"
+                    android:gravity="center"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/create_acc_button"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="SAVE" />
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:text="CANCEL"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
